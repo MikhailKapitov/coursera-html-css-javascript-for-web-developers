@@ -1,0 +1,81 @@
+/* General styling. */
+
+* {
+	box-sizing: border-box;
+	font-family: Helvetica;
+}
+
+.container {
+/*	width: 90%;*/
+	margin: 0 auto;
+}
+
+.box-section {
+	float: left;
+	border: 1px black solid;
+	height: 300px;
+	margin: 1%;
+	background-color: #9c754f;
+	position: relative;
+	overflow: auto;
+}
+
+.title-thing {
+	border: 1px black solid;
+	height: 64px;
+	width: 45%;
+	position: relative;
+	left: 55%;
+	text-align: center;
+	overflow: auto;
+}
+
+.yellow {
+	background-color: #ccb400;
+}
+
+.orange {
+	background-color: #cc6600;
+}
+
+.red {
+	background-color: #8f0000;
+	color: white;
+}
+
+p {
+	padding: 1%;
+}
+
+h1 {
+	font-size: 175%;
+	text-align: center;
+}
+
+h2 {
+	font-size: 125%;
+}
+
+/* Desktop view styling (>= 992 px). */
+@media (min-width: 992px) {
+	.box-section {
+		width: 31.333%;
+	}
+}
+
+/* Tablet view styling (768-991 px). */
+@media (min-width: 768px) and (max-width: 991px) {
+	.box-section {
+		width: 48%;
+	}
+	.box-section:last-child {
+		width: 98%;
+	}
+}
+
+/* Mobile view styling (<= 767 px). */
+@media (max-width: 767px) {
+	.box-section {
+		width: 98%;
+	}
+}
